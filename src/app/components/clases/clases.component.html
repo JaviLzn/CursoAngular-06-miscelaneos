@@ -17,11 +17,11 @@
     cambiar
 </button>
 
-<br><br>
+<br>
+<br>
 <h3>Proceso Asíncrono</h3>
 <button class="btn btn-primary" (click)="ejecutar()" [disabled]="cargar">
-  <i [ngClass]="{'fa-save': !cargar, 'fa-sync fa-spin': cargar}"
-  class="fa m-1"></i>
- <span *ngIf="!cargar">Guardar cambios</span>
- <span *ngIf="cargar">Espere por favor</span>
+    <i [ngClass]="{'fa-save': !cargar, 'fa-sync fa-spin': cargar}" class="fa m-s1"></i>
+    <span *ngIf="!cargar">Guardar cambios</span>
+    <span *ngIf="cargar">Espere por favor</span>
 </button>
